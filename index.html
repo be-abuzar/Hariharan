@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hari Haran's Birthday Treasure Hunt</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <script>
+        function showPage(pageId) {
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => {
+                page.style.display = 'none';
+            });
+            document.getElementById(pageId).style.display = 'block';
+        }
+
+        function checkAnswer(answer) {
+            if (answer === 'right') {
+                showPage('page-4');
+            } else {
+                showPage('page-3');
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Landing Page -->
+    <div id="landing-page" class="page">
+        <h1>Happy Birthday, Hari Haran!</h1>
+        <p>Here's a funny birthday wish just for you: "Happy Birthday! You're one year closer to being the crazy cat person. Embrace it!"</p>
+        <div class="cake-container">
+            <img src="cake.png" id="cake" alt="Birthday Cake">
+        </div>
+        <button onclick="showPage('page-2')">Start</button>
+    </div>
+
+    <!-- Page 2 -->
+    <div id="page-2" class="page" style="display:none;">
+        <h1>Riddle Time!</h1>
+        <p>What has keys but can't open locks?</p>
+        <div class="options">
+            <button onclick="checkAnswer('wrong')">A Car</button>
+            <button onclick="checkAnswer('wrong')">A House</button>
+            <button onclick="checkAnswer('right')">A Piano</button>
+            <button onclick="checkAnswer('wrong')">A Computer</button>
+            <button onclick="checkAnswer('wrong')">A Bag</button>
+            <button onclick="checkAnswer('wrong')">A Bottle</button>
+            <button onclick="checkAnswer('wrong')">A Door</button>
+            <button onclick="checkAnswer('wrong')">A Phone</button>
+            <button onclick="checkAnswer('wrong')">A Clock</button>
+            <button onclick="checkAnswer('wrong')">A Wallet</button>
+        </div>
+    </div>
+
+    <!-- Page 3 -->
+    <div id="page-3" class="page" style="display:none;">
+        <h1>Wrong Answer!</h1>
+        <p>Oh no, you got it wrong! But don't worry, try again! Or not, because why would you want to keep going? Life is tough anyway.</p>
+        <button onclick="showPage('page-4')">Do you still want to continue?</button>
+    </div>
+
+    <!-- Page 4 -->
+    <div id="page-4" class="page" style="display:none;">
+        <h1>Just Kidding!</h1>
+        <p>Haha, just kidding! You're doing great! Keep going, you're almost there!</p>
+        <button onclick="showPage('page-5')">Let's go to the next page</button>
+    </div>
+
+    <!-- Page 5 -->
+    <div id="page-5" class="page" style="display:none;">
+        <h1>Who is your best friend?</h1>
+        <div class="options">
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+	    <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+	    <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+            <button onclick="showPage('page-6')">Abuzar</button>
+
+
+        </div>
+    </div>
+
+    <!-- Final Page -->
+    <div id="page-6" class="page" style="display:none;">
+        <h1>Congratulations, Hari Haran!</h1>
+        <p>You've reached the end of the treasure hunt. Happy Birthday!</p>
+        <p>Wishing you a year full of joy and success. Let's celebrate!</p>
+        <button onclick="window.location.href='http://www.staggeringbeauty.com/'">Click here for a surprise!</button>
+    </div>
+</body>
+</html>
